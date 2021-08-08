@@ -116,6 +116,9 @@ private extension FilesOrganizer {
   
   /// Create url in *folderURL* with `FileMeta
   ///
+  /// Example:
+  /// `...Library/Caches/{Folder}/{Subfolder}/{FileName}.{PathExtension}`
+  ///
   func createFileURL(fileMeta: FileMeta) -> URL {
     return folderURL
       .appendingPathComponent(fileMeta.fileName)
